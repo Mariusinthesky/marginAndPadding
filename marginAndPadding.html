@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin And Padding</title>
+
+    <style>
+        
+        .cuerpo{
+        max-width: 600px;
+        margin: 0 auto;
+        }
+
+        .DivUno{
+            border: 2px solid blue; background-color: pink; padding: 32px; margin-left: 20px; margin-right: 20px;
+        }
+
+        .DivDos{
+            border: 2px solid purple; background-color: lightblue; margin-top: 12px; margin-bottom: 12px; width: 600px;
+        }
+
+        .DivTres{
+            border: 2px solid brown; background-color: pink; padding: 32px; margin-top: 48px; margin-left: 320px; width: 200px;
+        }
+        
+        .DivSuper{
+            max-width: 370px;
+            background: #eee;
+            font-family: sans-serif;
+            padding: 100px;
+        }
+
+        .titulo{
+            padding: 8px;
+            display:block;
+            border: 5px solid white; font-weight: bolder; font-size:16px; background-color: lightblue; margin-bottom: 0px;
+        }
+
+        .contenido{
+            padding-left: 8px; padding-right: 8px; padding-top: 16px; padding-bottom: 16px; border: 5px solid white; background-color: lightblue;
+        }
+
+        .botonContenedor{
+            text-align: center; border: 5px solid white; background-color: lightblue;
+            padding-left: 24px; padding-right: 24px; padding-top: 8px; padding-bottom: 8px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <h1>EJERCICOS DE MARGIN Y PADDING</h1>
+    <h2>Descripcion: </h2>
+    <p>En este file se van a hacer todos los ejercicios que tengan que ver con las cajas y el posicionamiento</p><hr/>
+
+    <h2>01-margin and padding-CSS</h2>
+    <ul>
+        <li>Los div uno y tres tienen 32 píxeles entre el texto y el borde.</li>
+        <li>El div uno tiene 12 píxeles entre él y cualquier otro elemento de la página.</li>
+        <li>Hay una brecha de 48 píxeles entre el div dos y el div tres.</li>
+        <li>El div tres está alineado a la derecha.</li>
+        <li>La alineación del div tres se logra usando margin(y no flotante, flexbox, etc.).</li>
+    </ul>
+
+    <h2>Resultado:</h2>
+
+    <div class="cuerpo">
+
+    <div class="DivUno">
+        DIV UNO
+    </div>
+
+    <div class="DivDos">
+        DIV DOS
+    </div>
+
+    <div class="DivTres">
+        DIV TRES
+    </div>
+</div><hr/>
+
+<h2>02-margin and padding-CSS</h2>
+    <ul>
+        <li>Hay 8 píxeles entre el borde de la tarjeta y su contenido (las secciones azules).</li>
+        <li>Hay un espacio de 8 píxeles entre cada una de las secciones azules dentro de la tarjeta.</li>
+        <li>El título de la tarjeta utiliza una fuente de 16 píxeles.</li>
+        <li>Hay 8 píxeles entre el texto del título y el borde de la sección del título.</li>
+        <li>La sección de contenido tiene un espacio de 16 píxeles en la parte superior e inferior y 8 píxeles en cada lado.</li>
+        <li>Todo dentro de la .botonContenedor sección está centrado y hay un relleno de 8px.</li>
+        <li>El Botón Grande está centrado en su propia línea.</li>
+        <li>El Botón Grande tiene un espacio de 24px en los lados y 8px en la parte superior e inferior.</li>
+    </ul>
+
+    <h2>Resultado:</h2>
+
+    <div class="DivSuper">
+    <div class="tarjeta">
+        <h1 class="titulo">I'm a card</h1>
+        <div class="contenido">I have content inside me..lorem ipsum blah blah blah. Here's some stuff you need to read.</div>
+        <div class="botonContenedor">and a <button>BIG BUTTON</button></div>
+      </div>
+    </div>
+</body>
+</html>
